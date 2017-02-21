@@ -15,6 +15,8 @@
 		054E50C21E5C020100491930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054E50C01E5C020100491930 /* LaunchScreen.storyboard */; };
 		054E50CD1E5C020100491930 /* ShimmerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E50CC1E5C020100491930 /* ShimmerTests.m */; };
 		054E50D81E5C020100491930 /* ShimmerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E50D71E5C020100491930 /* ShimmerUITests.m */; };
+		054E50EC1E5C022300491930 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E50E91E5C022300491930 /* FBShimmeringLayer.m */; };
+		054E50ED1E5C022300491930 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E50EB1E5C022300491930 /* FBShimmeringView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		054E50D31E5C020100491930 /* ShimmerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		054E50D71E5C020100491930 /* ShimmerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShimmerUITests.m; sourceTree = "<group>"; };
 		054E50D91E5C020100491930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054E50E61E5C022300491930 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		054E50E71E5C022300491930 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		054E50E81E5C022300491930 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		054E50E91E5C022300491930 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		054E50EA1E5C022300491930 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		054E50EB1E5C022300491930 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		054E50B11E5C020100491930 /* Shimmer */ = {
 			isa = PBXGroup;
 			children = (
+				054E50E51E5C022300491930 /* FBShimmering */,
 				054E50B51E5C020100491930 /* AppDelegate.h */,
 				054E50B61E5C020100491930 /* AppDelegate.m */,
 				054E50B81E5C020100491930 /* ViewController.h */,
@@ -138,6 +147,19 @@
 				054E50D91E5C020100491930 /* Info.plist */,
 			);
 			path = ShimmerUITests;
+			sourceTree = "<group>";
+		};
+		054E50E51E5C022300491930 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				054E50E61E5C022300491930 /* FBShimmering-Prefix.pch */,
+				054E50E71E5C022300491930 /* FBShimmering.h */,
+				054E50E81E5C022300491930 /* FBShimmeringLayer.h */,
+				054E50E91E5C022300491930 /* FBShimmeringLayer.m */,
+				054E50EA1E5C022300491930 /* FBShimmeringView.h */,
+				054E50EB1E5C022300491930 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +297,8 @@
 			files = (
 				054E50BA1E5C020100491930 /* ViewController.m in Sources */,
 				054E50B71E5C020100491930 /* AppDelegate.m in Sources */,
+				054E50EC1E5C022300491930 /* FBShimmeringLayer.m in Sources */,
+				054E50ED1E5C022300491930 /* FBShimmeringView.m in Sources */,
 				054E50B41E5C020100491930 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
